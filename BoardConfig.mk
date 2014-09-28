@@ -39,6 +39,9 @@ TARGET_KERNEL_CONFIG := ville_defconfig
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/ville/bluetooth
 
+# Camera
+BOARD_CAMERA_FRONT_VGA := true
+
 # Use libril in the device tree
 BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_FIVE_SEARCH_RESPONSES := true
@@ -79,4 +82,5 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_VOLD_MAX_PARTITIONS := 36
 
 # Recovery
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 TARGET_RECOVERY_FSTAB := device/htc/ville/rootdir/etc/fstab.qcom
